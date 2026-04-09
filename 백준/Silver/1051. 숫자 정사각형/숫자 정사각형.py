@@ -3,7 +3,7 @@ input = sys.stdin.readline
 
 N, M = map(int,input().split())
 
-squB = max(N, M) # 그리디하게 하기 위해 가능한 가장 큰 너비 부터 서치
+squB = min(N, M) # 그리디하게 하기 위해 가능한 가장 큰 너비 부터 서치
 lst = [list(map(int, input().strip())) for _ in range(N)]
 end = False
 
